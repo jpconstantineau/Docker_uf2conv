@@ -1,5 +1,5 @@
 FROM ghcr.io/jpconstantineau/docker_bluefruit_nrf52:0.24.0 as downloader
-RUN ls -a /root/.arduino15/staging/packages/
+RUN arduino-cli config dump
 RUN ls -a /root/.arduino15/staging/tools/
 RUN ls -a /home
 
